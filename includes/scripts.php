@@ -1,4 +1,4 @@
-<!-- Bootstrap core JavaScript-->
+ <!-- Bootstrap core JavaScript-->
   <script src="required/jquery/jquery.min.js"></script>
   <script src="required/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -6,7 +6,7 @@
   <script src="required/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
+  <script src="js/admin.min.js"></script>
 
   <!-- Page level plugins -->
   <script src="required/chart.js/Chart.min.js"></script>

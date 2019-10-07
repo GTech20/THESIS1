@@ -20,45 +20,45 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <label for="client" class="col-sm-3 control-label">Client's Name</label>
+                            <label for="client" class="col-sm-3 control-label">Client ID</label>
                             </br>
                             <div class="col-12">
                                 <input type="text" class="form-control" style="color: black;" id="client_name" name="client" placeholder="Enter Name..." required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="client" class="col-sm-3 control-label">Client's Address</label>
+                            <label for="client" class="col-sm-3 control-label">Product Name</label>
                             </br>
                             <div class="col-12">
                                 <input type="text" class="form-control" style="color: black;" id="client_name" name="client" placeholder="Enter Address..." required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="client" class="col-sm-3 control-label">Product</label>
+                            <label for="client" class="col-sm-3 control-label">Quantity</label>
                             </br>
                             <div class="col-12">
                                 <input type="text" class="form-control" style="color: black;" id="client_name" name="client" placeholder="Product Name..." required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="client" class="col-sm-3 control-label">Quantity</label>
+                            <label for="client" class="col-sm-3 control-label">Unit Price</label>
                             </br>
                             <div class="col-12">
                                 <input type="text" class="form-control" style="color: black;" id="client_name" name="client" placeholder="Number of Items..." required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="client" class="col-sm-3 control-label">Unit Price</label>
-                            </br>
-                            <div class="col-12">
-                                <input type="text" class="form-control" style="color: black;" id="client_name" name="client" placeholder="Price..." required>
-                            </div>
+                            <label for="client" class="col-sm-2 control-label">Payment</label>
+                            <select class="form-control col-sm-5" style="color: black;" id="client_payment" name="payment" required>
+                                <option>Cash</option>
+                                <option>Credit</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="client" class="col-sm-3 control-label">Total Amount</label>
                             </br>
                             <div class="col-12">
-                                <input type="text" class="form-control" style="color: black;" id="client_name" name="client" placeholder="Total..." required>
+                                <input type="text" class="form-control col-lg-6" style="color: black;" id="client_name" name="client" placeholder="Total..." required>
                             </div>
                         </div>
                     </form>

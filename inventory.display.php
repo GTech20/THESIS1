@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Jojo Vito Designs Gallery</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="required/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="icon" href="images/logo.ico" type="image/x-icon">
-
-    <!-- Custom styles for this template-->
-    <link href="css/admin.min.css" rel="stylesheet">
-    <link href="required/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
-
-</head>
+<?php require 'includes/header.php';?>
 
 <body id="page-top">
 
@@ -42,10 +23,10 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Displayed Items</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Display Items</h1>
                         <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#displayModal">
                             <i class="fas fa-plus"></i>
-                            Add Transaction
+                            Add Item
                         </a>
 
                     </div>
@@ -54,7 +35,7 @@
                         <!-- DataTales Example -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Transactions</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">List of Items</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -85,31 +66,65 @@
                                                 <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
                                                     <thead>
                                                         <tr role="row">
-                                                            <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" aria-sort="descending" style="width: 50px;">ID</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 100px;">Client Name</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 100px;">Address</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 35px;">Product</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 45px;">Qty</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 45px;">U_Price</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 45px;">Total Amt</th>
-                                                            <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 45px;"></th>
+                                                            <th>ID</th>
+                                                            <th>Item Name</th>
+                                                            <th>Item Type</th>
+                                                            <th>Quantity</th>
+                                                            <th>Date</th>
+                                                            <th><center>Status</center></th>
+                                                            <th><center>Action</center></th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
-                                                            <td>Tiger Nixon</td>
-                                                            <td>System Architect</td>
-                                                            <td>Edinburgh</td>
-                                                            <td>61</td>
-                                                            <td>2011/04/25</td>
-                                                            <td>$320,800</td>
+                                                            <td>adawfadwd</td>
+                                                            <td>Trophy</td>
+                                                            <td>50</td>
+                                                            <td>1/1/2000</td>
+                                                            <td>Instock</td>
                                                             <td>
                                                                 <center>
-                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#purchaseModal">
+                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateRaw">
                                                                         <i class="fas fa-info-circle"></i>
                                                                     </a>
-                                                                    <a href="#" class="btn btn-danger btn-circle">
+                                                                    <a href="#" class="btn btn-danger btn-circle" data-toggle="modal" data-target="#deleteModal">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </a>
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>adawfadwd</td>
+                                                            <td>Trophy</td>
+                                                            <td>50</td>
+                                                            <td>1/1/2000</td>
+                                                            <td>Instock</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateRaw">
+                                                                        <i class="fas fa-info-circle"></i>
+                                                                    </a>
+                                                                    <a href="#" class="btn btn-danger btn-circle" data-toggle="modal" data-target="#deleteModal">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </a>
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>adawfadwd</td>
+                                                            <td>Trophy</td>
+                                                            <td>50</td>
+                                                            <td>1/1/2000</td>
+                                                            <td>Instock</td>
+                                                            <td>
+                                                                <center>
+                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateRaw">
+                                                                        <i class="fas fa-info-circle"></i>
+                                                                    </a>
+                                                                    <a href="#" class="btn btn-danger btn-circle" data-toggle="modal" data-target="#deleteModal">
                                                                         <i class="fas fa-trash"></i>
                                                                     </a>
                                                                 </center>
@@ -168,13 +183,19 @@
             </div>
             <!-- End of Main Content -->
 
-            <?php require 'includes/footer.php';?>
+            <?php require 'includes/delete.modal.php';?>
             <?php require 'includes/display.modal.php';?>
+            
         </div>
         <!-- End of Content Wrapper -->
+        
+            
+            <?php require 'includes/update.purchase.php';?>
 
     </div>
     <!-- End of Page Wrapper -->
+    
+            <?php require 'includes/footer.php';?>
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
@@ -183,13 +204,6 @@
 
     <?php require 'includes/logout.modal.php';?>
 
-    <?php require 'includes/scripts.php';?>
-    <!-- Core plugin JavaScript-->
-    <script src="required/jquery-easing/jquery.easing.min.js"></script>
-
-
-
-
 </body>
-
+    <?php require 'includes/scripts.php';?>
 </html>

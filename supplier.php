@@ -1,26 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Jojo Vito Designs Gallery</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="required/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="icon" href="images/logo.ico" type="image/x-icon">
-
-    <!-- Custom styles for this template-->
-    <link href="css/admin.min.css" rel="stylesheet">
-    <link href="required/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
-
-</head>
+<?php require 'includes/header.php';?>
 
 <body id="page-top">
 
@@ -42,10 +23,10 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Consignee</h1>
-                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#consigneeModal">
+                        <h1 class="h3 mb-0 text-gray-800">Suppliers</h1>
+                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#supplierModal">
                             <i class="fas fa-plus"></i>
-                            Add Consignee
+                            Add Supplier
                         </a>
 
                     </div>
@@ -54,7 +35,7 @@
                         <!-- DataTales Example -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Transactions</h6>
+                                <h6 class="m-0 font-weight-bold text-primary">List of Suppliers</h6>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -86,25 +67,25 @@
                                                     <thead>
                                                         <tr role="row">
                                                             <th>ID</th>
-                                                            <th>Client ID</th>
-                                                            <th>Product ID</th>
-                                                            <th>Quantity</th>
-                                                            <th>Unit Price</th>
-                                                            <th>Total Amount</th>
-                                                            <th><center>Action</center></th>
+                                                            <th>Name</th>
+                                                            <th>Address</th>
+                                                            <th>Contact</th>
+                                                            <th>Email</th>
+                                                            <th>
+                                                                <center>Action</center>
+                                                            </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>01</td>
-                                                            <td>003</td>
-                                                            <td>0001</td>
-                                                            <td>50</td>
-                                                            <td>500</td>
-                                                            <td>$320,800</td>
+                                                            <td>1</td>
+                                                            <td>Huakong</td>
+                                                            <td>Bacolod</td>
+                                                            <td>+63912415141414</td>
+                                                            <td>adwodn@gmail.com</td>
                                                             <td>
                                                                 <center>
-                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateConsignee">
+                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateSupplier">
                                                                         <i class="fas fa-info-circle"></i>
                                                                     </a>
                                                                     <a href="#" class="btn btn-danger btn-circle" data-toggle="modal" data-target="#deleteModal">
@@ -114,15 +95,14 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>01</td>
-                                                            <td>003</td>
-                                                            <td>0001</td>
-                                                            <td>50</td>
-                                                            <td>500</td>
-                                                            <td>$320,800</td>
+                                                            <td>1</td>
+                                                            <td>Huakong</td>
+                                                            <td>Bacolod</td>
+                                                            <td>+63912415141414</td>
+                                                            <td>adwodn@gmail.com</td>
                                                             <td>
                                                                 <center>
-                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateConsignee">
+                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateSupplier">
                                                                         <i class="fas fa-info-circle"></i>
                                                                     </a>
                                                                     <a href="#" class="btn btn-danger btn-circle" data-toggle="modal" data-target="#deleteModal">
@@ -132,15 +112,14 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>01</td>
-                                                            <td>003</td>
-                                                            <td>0001</td>
-                                                            <td>50</td>
-                                                            <td>500</td>
-                                                            <td>$320,800</td>
+                                                            <td>1</td>
+                                                            <td>Huakong</td>
+                                                            <td>Bacolod</td>
+                                                            <td>+63912415141414</td>
+                                                            <td>adwodn@gmail.com</td>
                                                             <td>
                                                                 <center>
-                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateConsignee">
+                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateSupplier">
                                                                         <i class="fas fa-info-circle"></i>
                                                                     </a>
                                                                     <a href="#" class="btn btn-danger btn-circle" data-toggle="modal" data-target="#deleteModal">
@@ -150,15 +129,14 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>01</td>
-                                                            <td>003</td>
-                                                            <td>0001</td>
-                                                            <td>50</td>
-                                                            <td>500</td>
-                                                            <td>$320,800</td>
+                                                            <td>1</td>
+                                                            <td>Huakong</td>
+                                                            <td>Bacolod</td>
+                                                            <td>+63912415141414</td>
+                                                            <td>adwodn@gmail.com</td>
                                                             <td>
                                                                 <center>
-                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateConsignee">
+                                                                    <a href="#" class="btn btn-info btn-circle" data-toggle="modal" data-target="#updateSupplier">
                                                                         <i class="fas fa-info-circle"></i>
                                                                     </a>
                                                                     <a href="#" class="btn btn-danger btn-circle" data-toggle="modal" data-target="#deleteModal">
@@ -221,11 +199,13 @@
             <!-- End of Main Content -->
 
             <?php require 'includes/delete.modal.php';?>
-            <?php require 'includes/update.purchase.php';?>
+            <?php require 'includes/supplier.modal.php';?>
+
         </div>
         <!-- End of Content Wrapper -->
 
-        <?php require 'includes/consignee.modal.php';?>
+        <?php require 'includes/update.client.php';?>
+
     </div>
     <!-- End of Page Wrapper -->
 
@@ -236,13 +216,9 @@
 
     <?php require 'includes/logout.modal.php';?>
 
-
     <?php require 'includes/footer.php';?>
 
-
-
 </body>
-
 <?php require 'includes/scripts.php';?>
 
 </html>
